@@ -1,0 +1,458 @@
+/******************************************************/
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+/******************************************************/
+
+/******************************************************/
+/*                                                    */
+/*                   VERSIÓN MOBILE                   */
+/*                                                    */
+/*----------------------------------------------------*/
+/* Propiedades grid padre (index.html) */
+.container{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 90px 40px 500px 200px;
+    grid-template-areas: "gheader gheader gheader"
+                         "gnav gnav gnav"
+                         "gmain gmain gmain"
+                         "gfooter gfooter gfooter";
+}
+
+/*----------------------------------------------------*/
+/* Propiedades grid padre (nosotros.html) */
+.container-nos{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 90px 40px auto 200px;
+    grid-template-areas: "gheader gheader gheader"
+                         "gnav gnav gnav"
+                         "gmain gmain gmain"
+                         "gfooter gfooter gfooter";
+}
+
+/*----------------------------------------------------*/
+/* Propiedades grid padre (contacto.html) */
+.container-con{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 90px 40px auto 200px;
+    grid-template-areas: "gheader gheader gheader"
+                         "gnav gnav gnav"
+                         "gmain gmain gmain"
+                         "gfooter gfooter gfooter";
+}
+
+/*----------------------------------------------------*/
+/* Propiedades grid padre (cocteleria.html) */
+.container-coc{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 90px 40px auto 200px;
+    grid-template-areas: "gheader gheader gheader"
+                         "gnav gnav gnav"
+                         "gmain gmain gmain"
+                         "gfooter gfooter gfooter";
+}
+
+/*----------------------------------------------------*/
+/* Propiedades grid padre (gastronomia.html) */
+.container-gas{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 90px 40px auto 200px;
+    grid-template-areas: "gheader gheader gheader"
+                         "gnav gnav gnav"
+                         "gmain gmain gmain"
+                         "gfooter gfooter gfooter";
+}
+/******************************************************/
+
+
+
+/******************************************************/
+/** Propiedades grid hijos **/
+/******************************************************/
+/** HEADER **/
+.g-header{
+    grid-area: gheader;
+    justify-self: center;
+}
+/******************************************************/
+
+/******************************************************/
+/** NAV **/
+.g-nav{
+    grid-area: gnav;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Formato de la barra de navegación */ 
+.g-nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 7px;
+    margin: auto;
+    text-shadow: 2px 2px 2px rgb(143, 143, 143);
+}
+
+/* Hover menú nav */
+.g-nav ul li:hover{
+    background-color: rgb(140, 140, 140);
+
+}
+.g-nav ul li a:hover{
+    color: white;
+
+}
+
+/* Formato al texto del nav */
+.g-nav ul li a{
+    text-decoration: none;
+    color: rgb(140, 140, 140);
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN INDEX **/
+/* Configuración del background */
+.g-main{
+    grid-area: gmain;
+    background-image: url(https://i.imgur.com/AseT7Rb.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+}
+
+/* Texto (título y parrafo) */
+.g-main h1{
+    margin-top: 120px;
+    color: white;
+    font-size: 21.5pt;
+    text-shadow: 1px 1px 0.5px black;    
+}
+.g-main p{
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 0.5px black;    
+}
+
+/* Botón 'SOBRE NOSOTROS' */
+.g-main a{
+    text-decoration: none;
+    background-color: lightgray;
+    color: rgb(92, 92, 92);
+    padding: 7.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.g-main a:hover{
+    background-color: white;
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN GASTRONOMIA **/
+.main-gast{
+    grid-area: gmain;
+    background-image: url(https://i.imgur.com/USEgEem.jpeg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+/* Formateo del Section de gastronomia */
+.main-gast section{
+    display: inline-block;
+    background-color: rgb(192, 192, 192);
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    width: auto; height: auto;
+    background-size: cover;
+    margin-top: 10px;
+    opacity: 0.9;
+    text-shadow: 2px 2px 4px rgb(82, 82, 82);
+    margin-bottom: 10px;
+    
+}
+
+/* Formateo de texto de la tabla */
+.main-gast section table{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: auto;
+}
+
+/* Botón de 'más información' */
+.main-gast section a{
+    text-decoration: none;
+    background-color: rgb(156, 156, 156);
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+    padding: 7.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+.main-gast section a:hover{
+    background-color: white;
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN COCTELERIA **/
+.main-coct{
+    grid-area: gmain;
+    background-image: url(https://i.imgur.com/X6Co5AU.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+/* Formateo del article de cocteleria.html */
+.main-coct article{
+    display: inline-block;
+    background-color: rgb(192, 192, 192);
+    color: rgb(56, 56, 56);
+    width: 320px; height: auto;
+    background-size: cover;
+    margin-top: 10px;
+    opacity: 0.9;
+    text-shadow: 2px 2px 4px rgb(82, 82, 82);
+    margin-bottom: 10px;
+}
+
+/* Formateo del parrafo */
+.main-coct article p{
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1.5px 1.5px 1px black;
+}
+
+/* Botón 'CONSULTAR' */
+.main-coct article a{
+    text-decoration: none;
+    background-color: rgb(156, 156, 156);
+    color: rgb(212, 212, 212);
+    font-weight: bold;
+    padding: 7.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+.main-coct article a:hover{
+    background-color: white;
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN NOSOTROS **/
+.main-nos{
+    grid-area: gmain;
+    background-image: url(https://i.imgur.com/MkehGYE.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+/* ID del cuerpo de nosotros */
+#article-nosotros{
+    display: inline-block;
+    width: 350px; height: 450px;
+    background-size: cover;
+    opacity: 0.825;
+}
+
+/* Imagen */
+#article-nosotros img{
+    margin-top: 10px;
+    max-width: 320px;
+}
+
+/* Texto */
+#article-nosotros h2{
+    color: rgb(71, 71, 71);
+    background-color: rgb(192, 192, 192);
+    text-shadow: 2px 2px 2px rgb(102, 102, 102);
+    max-width: 320px;
+    margin-left: 15px;
+}
+#article-nosotros p{   
+    color: white;
+    font-weight: bold;
+    background-color: rgb(192, 192, 192);
+    text-shadow: 1.2px 1.2px 1px black;
+    max-width: 320px;
+    margin-left: 15px;
+
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN CONTACTO **/
+.main-cont{
+    grid-area: gmain;
+    background-image: url(https://i.imgur.com/KIUV57t.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+/* Formateando section */
+.main-cont section{
+    display: inline-block;
+    background-color: rgb(228, 228, 228);
+    text-shadow: 1px 1px 2px rgb(109, 109, 109);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+/* Imagen de "Contactanos" */
+.main-cont section img{
+    margin-top: 10px;
+    max-width: 345px;
+}
+/******************************************************/
+
+/******************************************************/
+/** FOOTER **/
+.g-footer{
+    grid-area: gfooter;
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+}
+/* Formateo de texto */
+.g-footer p{
+    font-size: 13pt;
+    margin-top: 60px;
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
+}
+
+/* Tamaño de logos */
+.g-footer p img{
+    max-width: 15px;
+}
+/******************************************************/
+
+
+/******************************************************/
+/*                                                    */
+/*                  VERSIÓN DESKTOP                   */
+/*                                                    */
+/*----------------------------------------------------*/
+@media only screen and (min-width: 1024px) {
+    /* GRID PADRE */
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* GRIDS HIJOS */
+    /* HEADER */
+    .g-header {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    /* NAV */
+    .g-nav {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    /* Aumentar tamaño de fuente al cambiar a version Desktop */
+    .g-nav ul li {
+        font-size: 14pt;
+    }
+
+    /* MAIN */
+    .g-main {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    /* Tamaños fuentes título y párrafo */
+    .g-main h1{
+        font-size: 32pt;
+    }
+    .g-main p{
+        font-size: 18pt;
+    }
+
+    /* Boton de 'SOBRE NOSOTROS' */
+    .g-main a{
+        font-size: 12pt;
+    }
+
+    /* FOOTER */
+    .g-footer {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    /* Tamaño del texto */
+    .g-footer p{
+        font-size: 16pt;
+    }
+
+    /* Main coctelería (ajusto a tamaño Desktop) */
+    .main-coct article{
+        display: inline-block;
+        background-color: rgb(192, 192, 192);
+        color: rgb(56, 56, 56);
+        width: 90%; height: auto;
+        background-size: cover;
+        margin-top: 10px;
+        opacity: 0.9;
+        text-shadow: 2px 2px 4px rgb(82, 82, 82);
+        margin-bottom: 10px;
+    }
+
+    /* Main gastronomía (ajusta el background gris) */
+    .main-gast section{
+        width: 65%; height: auto;
+    } 
+
+}
+
+/******************************************************/

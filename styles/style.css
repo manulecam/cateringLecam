@@ -117,14 +117,14 @@
 
 }
 .g-nav ul li a:hover{
-    color: rgb(110, 70, 63);
+    color: rgb(128, 82, 74);
 
 }
 
 /* Formato al texto del nav */
 .g-nav ul li a{
     text-decoration: none;
-    color: rgb(219, 161, 145);
+    color: rgb(143, 106, 95);
 }
 /******************************************************/
 
@@ -310,7 +310,7 @@
 /* ID del cuerpo de nosotros */
 #article-nosotros{
     display: inline-block;
-    width: 350px; height: 450px;
+    width: 350px; height: 500px;
     background-size: cover;
     opacity: 0.8;
 }
@@ -330,9 +330,13 @@
 #article-nosotros h2{
     color: rgb(85, 65, 60);
     background-color: rgb(255, 213, 198);
-    text-shadow: 2px 2px 2px rgb(102, 102, 102);
+    text-shadow: 2px 2px 2px rgb(49, 49, 49);
     max-width: 320px;
     margin-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#article-nosotros h2:hover{
+    color: rgb(255, 242, 220);
 }
 #article-nosotros p{   
     color: rgb(85, 65, 60);
@@ -341,8 +345,33 @@
     text-shadow: 1.2px 1.2px 2px rgb(100, 100, 100);
     max-width: 320px;
     margin-left: 15px;
-
 }
+
+/* Botones */ 
+#article-nosotros p a{
+    text-decoration: none;
+    background-color: rgb(220, 165, 145);
+    color: rgb(255, 255, 255);
+    padding: 7.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#article-nosotros p a:hover{
+    background-color: rgb(253, 230, 222);
+    color: rgb(160, 125, 115);
+}
+/* ID para cambiar el color de una parte del texto */
+#blanco{
+    color: rgb(255, 242, 220);
+}
+#blanco:hover{
+    color: rgb(85, 65, 60);
+}
+
 /******************************************************/
 
 /******************************************************/

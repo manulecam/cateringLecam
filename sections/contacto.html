@@ -44,45 +44,51 @@
         <main class="main-cont">
 
             <section>
-                <img src="../images/contacto.png" alt="contacto">
+                <!-- Google maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.776652414578!2d-58.368352185195!3d-34.609808865326556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352bd9de9c91%3A0xe0158219d8082b1a!2sAv.%20Alicia%20Moreau%20de%20Justo%201050%2C%20C1107AAT%20CABA!5e0!3m2!1ses!2sar!4v1655828532788!5m2!1ses!2sar"
+                    width="345" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
 
                 <!-- Formulario -->
-                <form>
-                    <h1>Contactanos</h1>
-                    <label for="nombre_apellido">Nombre y apellido</label>
+                <div id="formularioCont">
+                    <form>
+                        <br>
+                        <h1>Contactanos</h1>
+                        <label for="nombre_apellido">Nombre y apellido</label>
+                        <br>
+                        <input id="formularioContacto" type="text" name="nombre_apellido" placeholder="Nombre y apellido" />
+                        <input id="botonContact" type="reset" value="Borrar">
+                    </form>
+                
+                    <form>
+                        <label for="email">Dirección email</label>
+                        <br>
+                        <input id="formularioContacto" type="text" name="email" placeholder="Dirección email" />
+                        <input id="botonContact" type="reset" value="Borrar">
+                    </form>
+                
+                    <form>
+                        <label for="telefono">Teléfono</label>
+                        <br>
+                        <input id="formularioContacto" type="text" name="telefono" placeholder="Teléfono" />
+                        <input id="botonContact" type="reset" value="Borrar">
+                    </form>
+                
+                    <form>
+                        <label for="mensaje">Mensaje</label>
+                        <br>
+                        <textarea id="formularioContacto" name="texto" rows="8" cols="29" placeholder="Escriba su mensaje"></textarea>
+                        <br>
+                        <label>Quiero recibir novedades en mi e-mail <input type="checkbox" name="acepta" value="1"></label>
+                        <br><br>
+                        <input id="botonContact" type="submit" value="Enviar">
+                        <input id="botonContact" type="reset" value="Borrar">
+                    </form>
                     <br>
-                    <input type="text" name="nombre_apellido" placeholder="Nombre y apellido"/>
-                    <input type="reset" value="Borrar">
-                </form>
-    
-                <form>
-                    <label for="email">Dirección email</label>
-                    <br>
-                    <input type="text" name="email" placeholder="Dirección email"/>
-                    <input type="reset" value="Borrar">
-                </form>
-    
-                <form>
-                    <label for="telefono">Teléfono</label>
-                    <br>
-                    <input type="text" name="telefono" placeholder="Teléfono"/>
-                    <input type="reset" value="Borrar">
-                </form>
-    
-                <form>
-                    <label for="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="texto" rows="4" cols="30" placeholder="Escriba su mensaje"></textarea>
-                    <br>
-                    <label>Quiero recibir novedades en mi e-mail <input type="checkbox"  name="acepta"   value="1"></label>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </form>
-                <br>
-
-            </section>
+                </div>
+                </section>
 
         </main>
         <!--Main-->

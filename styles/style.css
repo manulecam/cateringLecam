@@ -216,7 +216,7 @@
 .main-gast section a{
     text-decoration: none;
     background-color: rgb(220, 165, 145);
-    color: rgb(88, 52, 39);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 7.5px;
     font-size: 11pt;
@@ -229,6 +229,7 @@
 }
 .main-gast section a:hover{
     background-color: white;
+    color: rgb(56, 56, 56);
 }
 /******************************************************/
 
@@ -299,7 +300,7 @@
 /** MAIN NOSOTROS **/
 .main-nos{
     grid-area: gmain;
-    background-image: url(https://i.imgur.com/MkehGYE.jpg);
+    background-image: url(https://images.alphacoders.com/118/thumb-1920-1188458.jpg);
     background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -379,7 +380,7 @@
 /** MAIN CONTACTO **/
 .main-cont{
     grid-area: gmain;
-    background-image: url(https://i.imgur.com/bOU3Ls4.jpg);
+    background-image: url(https://images3.alphacoders.com/120/thumb-1920-1206962.jpg);
     background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -412,6 +413,89 @@
     margin-top: 10px;
     max-width: 345px;
 }
+
+/* Formato botones */
+#botonContact{
+    border: none;
+    text-decoration: none;
+    background-color: rgb(220, 165, 145);
+    color: rgb(255, 255, 255);
+    padding: 7.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#botonContact:hover{
+    background-color: rgb(253, 230, 222);
+    color: rgb(160, 125, 115);
+}
+
+/* Formato de formulario */
+#formularioContacto{
+    border:none;
+    padding: 6.5px;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-right: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/******************************************************/
+
+/******************************************************/
+/** MAIN Galeria **/
+.main-gal{
+    grid-area: gmain;
+    background-image: url(https://images7.alphacoders.com/367/thumb-1920-367895.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+/* ID del cuerpo de nosotros */
+.main-gal article{
+    display: inline-block;
+    width: 350px; height: 200px;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+/* Animacion de opacidad */
+.main-gal article:hover{
+    opacity: 1;
+}
+
+/* Imagen */
+.main-gal article img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    max-width: 320px;
+}
+
+/******************************************************/
+
+/******************************************************/
+/** MAIN Galeria **/
+.main-servicios{
+    grid-area: gmain;
+    background-image: url(https://images5.alphacoders.com/108/thumb-1920-1084160.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+    text-align: center;
+} 
+
+
 /******************************************************/
 
 /******************************************************/
@@ -507,6 +591,30 @@
         font-size: 12pt;
     }
 
+    /* Main contacto EXPERIMENTAL */
+    .main-cont section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 200px;
+        max-width: 70%;
+    }
+    #formularioCont{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    /* Animacion de opacidad al section */
+    .main-cont section:hover{
+        opacity: 1;
+    }
+    
+    /* Maps */
+    .main-cont section iframe{
+        margin-top: 72.5px;
+    }
+    
     /* FOOTER */
     .g-footer {
         grid-column: 1/4;
@@ -535,6 +643,12 @@
     .main-gast section{
         width: 65%; height: auto;
     } 
+
+    .main-gal article img{
+        max-width: 350px;
+    }
+
+
 
 }
 
